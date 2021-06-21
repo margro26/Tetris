@@ -1,1 +1,0 @@
-print("Willkommen bei Tetris - dem Onlinespielklassiker!")
