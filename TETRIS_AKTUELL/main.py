@@ -14,13 +14,13 @@ def neuer_spielstein():
 
 
 
-block_size = 20
-board_width = block_size * 16
-board_height = block_size * 20
-block_speed = 5
-block_x = block_size * 16 / 2
-block_y = 50
-random_color = random.randint(0, 6)
+# block_size = 20
+# board_width = block_size * 16
+# board_height = block_size * 20
+# block_speed = 5
+# block_x = block_size * 16 / 2
+# block_y = 50
+# random_color = random.randint(0, 6)
 
 
 pygame.init()
@@ -34,26 +34,26 @@ while bRun:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             bRun = False
-    gedrueckt = pygame.key.get_pressed()
-
-    if gedrueckt[pygame.K_DOWN]:
-        block_speed += 100
-    elif gedrueckt[pygame.K_LEFT]:
-        if block_x >= 10:
-            block_x -= 10
-        else:
-            print("Sie haben das Ende des Spielfeldes erreicht!")
-    elif gedrueckt[pygame.K_RIGHT]:
-        if block_x <= board_width - 30:
-            block_x += 10
-        else:
-            print("Sie haben das Ende des Spielfeldes erreicht!")
-
-    neuer_spielstein()
-    block_speed += 5
-    if block_speed >= board_height - 70:
-        block_speed = 0
-        random_color = random.randint(0, 6)
-        block_x = block_size * 16 / 2
+    # gedrueckt = pygame.key.get_pressed()
+    #
+    # if gedrueckt[pygame.K_DOWN]:
+    #     block_speed += 100
+    # elif gedrueckt[pygame.K_LEFT]:
+    #     if block_x >= 10:
+    #         block_x -= 10
+    #     else:
+    #         print("Sie haben das Ende des Spielfeldes erreicht!")
+    # elif gedrueckt[pygame.K_RIGHT]:
+    #     if block_x <= board_width - 30:
+    #         block_x += 10
+    #     else:
+    #         print("Sie haben das Ende des Spielfeldes erreicht!")
+    #
+    # neuer_spielstein()
+    # block_speed += 5
+    # if block_speed >= board_height - 70:
+    #     block_speed = 0
+    #     random_color = random.randint(0, 6)
+    #     block_x = block_size * 16 / 2
 
     pygame.display.update()
