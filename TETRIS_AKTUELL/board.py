@@ -1,5 +1,5 @@
-import pygame
 import random
+import pygame
 
-class Spielsteine:
+class Board:
     print("Aufruf")
