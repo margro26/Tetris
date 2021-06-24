@@ -30,11 +30,7 @@ class Board:
             else:
                 print("Sie haben das Ende des Spielfeldes erreicht!")
 
-        block_speed += 5
-        if block_speed >= self.board_height - 70:
-            block_speed = 0
-            random_color = random.randint(0, 6)
-            block_x = block_size * 16 / 2
+        Spielsteine.drop()
 
 
     # def get_width(self):
