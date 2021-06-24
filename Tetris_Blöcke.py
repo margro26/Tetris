@@ -6,10 +6,6 @@ block_colors = [(0, 255, 255), (255, 255, 0), (128, 0, 128), (0, 255, 0), (255, 
 block_form = [()]
 
 
-def circle_move_right(start_x, start_y, block_size, move_x):
-    pygame.draw.circle(win, (255, 0, 0), (start_x + move_x, start_y), block_size, block_size)
-
-
 def block_1():
     rc1 = random.randint(0, 6)
     pygame.draw.rect(win, (block_colors[rc1]), (int(block_x), int(block_y), 20, 20))
