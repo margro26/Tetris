@@ -7,11 +7,13 @@ class Board:
         self.board_width = self.block_size * 16
         self.board_height = self.block_size * 20
         self.blocks_per_row = self.board_width / 20
-        # self.active_block
+        self.active_block = True
         # self.blocks_per_col
 
     def draw_playgound(self, win):
         win.fill((0, 0, 0))
+        pygame.display.set_mode((self.board_width, self.board_height))
+        pygame.display.set_caption("Tetris")
     def play(self):
         gedrueckt = pygame.key.get_pressed()
 
@@ -23,14 +25,13 @@ class Board:
             else:
                 print("Sie haben das Ende des Spielfeldes erreicht!")
         elif gedrueckt[pygame.K_RIGHT]:
-            if block_x <= board_width - 30:
+            if block_x <= self.board_width - 30:
                 block_x += 10
             else:
                 print("Sie haben das Ende des Spielfeldes erreicht!")
 
-        neuer_spielstein()
         block_speed += 5
-        if block_speed >= board_height - 70:
+        if block_speed >= self.board_height - 70:
             block_speed = 0
             random_color = random.randint(0, 6)
             block_x = block_size * 16 / 2
