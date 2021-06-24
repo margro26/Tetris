@@ -1,6 +1,6 @@
 import pygame
 import random
-
+from spielsteine import Spielsteine
 # ---------------Türkis--------Gelb-----------Lila-----------Grün---------Rot----------Blau---------Orange
 block_colors = [(0, 255, 255), (255, 255, 0), (128, 0, 128), (0, 255, 0), (255, 0, 0), (0, 0, 255), (255, 127, 0)]
 

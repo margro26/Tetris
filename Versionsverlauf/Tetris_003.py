@@ -1,4 +1,4 @@
-import pygame
+ import pygame
 import random
 
 # ---------------Türkis--------Gelb-----------Lila-----------Grün---------Rot----------Blau---------Orange
