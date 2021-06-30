@@ -1,5 +1,5 @@
 import pygame
-import random
+# import random
 from spielsteine import Spielsteine
 from board import Board
 win = pygame.display.get_surface()
@@ -7,11 +7,11 @@ win = pygame.display.get_surface()
 block_colors = [(0, 255, 255), (255, 255, 0), (128, 0, 128), (0, 255, 0), (255, 0, 0), (0, 0, 255), (255, 127, 0)]
 
 
-
+"""""
 def neuer_spielstein():
     global random_color, block_x, block_y, block_speed
     pygame.draw.rect(win, block_colors[random_color], (block_x, block_y + block_speed, block_size, block_size))
-
+"""""
 
 
 # Board.draw_playgound(win)

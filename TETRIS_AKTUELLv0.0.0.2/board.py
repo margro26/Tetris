@@ -25,14 +25,14 @@ class Board:
         pygame.display.set_caption("Tetris")
     def play(self):
         # ALTE SPIELSTEINE (inactive) werden gezeichnet
-        for inactive_block in inactive_blocks:
+        '''''for inactive_block in inactive_blocks:
             inactive_block = Spielsteine
             inactive_block.draw(self)
-
+        '''''
         # NEUER SPIELSTEIN wird erstellt
         block = Spielsteine # Die Variable Block wird mit der Klasse Spielsteine gleichgesetzt
         block.draw() # Der Block wird gezeichnet
-        active_blocks.append(block) # Der Block wird in die Liste der aktiven Blöcke gepakt.
+        active_blocks.append(block) # Der Block wird in die Liste der aktiven Blöcke geparkt.
         gedrueckt = pygame.key.get_pressed()
 
         if gedrueckt[pygame.K_DOWN]:
@@ -48,7 +48,7 @@ class Board:
             else:
                 print("Sie haben das Ende des Spielfeldes erreicht!")
 
-        Spielsteine.drop()
+        # Spielsteine.drop()
 
 
     # def get_width(self):
