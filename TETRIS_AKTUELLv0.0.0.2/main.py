@@ -1,11 +1,10 @@
 import pygame
 # import random
-from spielsteine import Spielsteine
+from block import Block
 from board import Board
 win = pygame.display.get_surface()
 # ---------------Türkis--------Gelb-----------Lila-----------Grün---------Rot----------Blau---------Orange
 block_colors = [(0, 255, 255), (255, 255, 0), (128, 0, 128), (0, 255, 0), (255, 0, 0), (0, 0, 255), (255, 127, 0)]
-
 
 """""
 def neuer_spielstein():
