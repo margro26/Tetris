@@ -5,9 +5,11 @@ import random
 #block_colors = [(0, 255, 255), (255, 255, 0), (128, 0, 128), (0, 255, 0), (255, 0, 0), (0, 0, 255), (255, 127, 0)]
 #block_form = [()]
 
+
 class Blöcke:
     def __init__(self):
         self.block_size = 20
+
 
 """""
     def block_1(self):

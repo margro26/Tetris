@@ -7,6 +7,7 @@ block_colors = [(0, 255, 255), (255, 255, 0), (128, 0, 128), (0, 255, 0), (255, 
 
 win = pygame.display.get_surface()
 
+
 class Spielsteine:
     def __init__(self):
         self.block_x = 0 # Position Block auf der x-Achse
