@@ -6,7 +6,7 @@ import random
 #block_form = [()]
 
 
-class Blöcke:
+class Spielsteine:
     def __init__(self):
         self.block_size = 20
 
