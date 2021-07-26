@@ -1,4 +1,4 @@
- import pygame
+import pygame
 import random
 
 # ---------------Türkis--------Gelb-----------Lila-----------Grün---------Rot----------Blau---------Orange
@@ -42,10 +42,12 @@ while bRun:
         else:
             print("Sie haben das Ende des Spielfeldes erreicht!")
     elif gedrueckt[pygame.K_RIGHT]:
-        if block_x <= board_width - 30:
+        if block_x <= board_width - 5:
             block_x += 10
         else:
             print("Sie haben das Ende des Spielfeldes erreicht!")
+    # elif gedrueckt[pygame.K_SPACE]:
+    #     pause
 
     neuer_spielstein()
     block_speed += 5

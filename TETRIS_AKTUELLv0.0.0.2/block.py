@@ -13,7 +13,7 @@ class Block:
         self.block_x = 0 # Position Block auf der x-Achse
         self.block_y = 0 # Position Block auf der y-Achse
         self.block_size = 20 # Seitengröße des Blockes
-        #self.block_color = (0, 0, 0) # Die Farbe, in der der Block gezeichnet wird (Parameter)
+        self.block_color = block_colors[random_color] # Die Farbe, in der der Block gezeichnet wird (Parameter)
         self.block_colors_position = 1 # Die Farbe des Blockes. Der Wert wird aus der Liste geholt
         self.block_speed = 5 # Fallgeschwindigkeit des Blockes
         self.board_width = self.block_size * 16 # Fensterbreite
@@ -23,7 +23,7 @@ class Block:
     def draw_new_block(self): # Der neue Block wird im Fenster gezeichnet
         self.block_x = self.block_size * 16 / 2 - (self.block_size/2)
         self.block_colors_position = random.randint(0, 6)
-        pygame.draw.rect(win, block_colors[self.block_colors_position], )
+        pygame.draw.rect(win, block_colors[self.block_colors_position],)
 
     #def is_active(self): # Liefert den Wert des Attributs active zurück.
         ###

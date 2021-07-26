@@ -13,7 +13,7 @@ def neuer_spielstein():
 """""
 
 
-# Board.draw_playgound(win)
+# Board.draw_background(win)
 pygame.init()
 
 
@@ -24,6 +24,6 @@ while bRun:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             bRun = False
-    Board.play()
+    # Board.play()
     pygame.display.update()
 pygame.quit()

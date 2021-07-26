@@ -19,10 +19,12 @@ class Board:
         self.block_y = 50
 
 
-    def draw_playgound(self, win):
+    def draw_background(self, win):
         win.fill((0, 0, 0))
         pygame.display.set_mode((self.board_width, self.board_height))
         pygame.display.set_caption("Tetris")
+
+
     def play(self):
         # ALTE SPIELSTEINE (inactive) werden gezeichnet
         '''''for inactive_block in inactive_blocks:
